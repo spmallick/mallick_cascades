@@ -1,6 +1,6 @@
 # mallick_cascades
 
-This repository contains minified versions of all OpenCV Haar and LBP cascades. Minification has been achieved by removing unnecessary white spaces and unnecessary precision. 
+This repository contains minified versions of all OpenCV Haar and LBP cascades. Minification has been achieved by removing unnecessary white spaces and unnecessary precision. Some examples are shown below
 
 | Cascade Name	| File size	    | Minified file size|
 |---------------|:-------------:|:-----------------:|
