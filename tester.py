@@ -16,7 +16,7 @@ if __name__ == '__main__' :
     mallick_filename = 'mallick_' + filename
     mallick_cascade_name = os.path.join(dirname, mallick_filename)
     object_cascade = cv2.CascadeClassifier(cascade_name)
-#    mallick_object_cascade = cv2.CascadeClassifier(mallick_cascade_name)
+    mallick_object_cascade = cv2.CascadeClassifier(mallick_cascade_name)
     cap = cv2.VideoCapture(0);
     font = cv2.FONT_HERSHEY_SIMPLEX
     red = (0,0,255)
@@ -27,8 +27,7 @@ if __name__ == '__main__' :
         gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
 
         objects = object_cascade.detectMultiScale(gray, 1.3, 5)
-        #       mallick_objects = mallick_object_cascade.detectMultiScale(gray, 1.3, 5)
-        mallick_objects = []
+        mallick_objects = mallick_object_cascade.detectMultiScale(gray, 1.3, 5)
         for (x,y,w,h) in objects:
             img = cv2.rectangle(img,(x+2,y+2),(x+w-4,y+h-4), blue,2)
         for (x,y,w,h) in mallick_objects:
