@@ -2,6 +2,13 @@
 
 This repository contains minified versions of all OpenCV Haar and LBP cascades. Minification has been achieved by removing unnecessary white spaces and unnecessary precision. 
 
+| Cascade Name	| File size	    | Minified file size|
+|---------------|:-------------:|:-----------------:|
+| haarcascade_eye.xml	| 336K	| 180K
+| haarcascade_frontalface_default.xml	| 912K	| 488K
+| haarcascade_frontalface_alt_tree.xml	| 2.6M | 1.4M
+| lbpcascade_frontalface.xml	| 52K	| 36K
+
 The original cascades are also shared for reference. The minified cascades are named with a prefix **mallick_**
 
 ## Tester
